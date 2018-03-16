@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154A6FB42059111300583176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FB32059111300583176 /* AppDelegate.swift */; };
+		154A6FB62059111300583176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FB52059111300583176 /* ViewController.swift */; };
+		154A6FB92059111400583176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154A6FB72059111400583176 /* Main.storyboard */; };
+		154A6FBB2059111400583176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154A6FBA2059111400583176 /* Assets.xcassets */; };
+		154A6FBE2059111400583176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154A6FBC2059111400583176 /* LaunchScreen.storyboard */; };
+		154A6FC92059111400583176 /* TriponroadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FC82059111400583176 /* TriponroadTests.swift */; };
+		154A6FD42059111400583176 /* TriponroadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FD32059111400583176 /* TriponroadUITests.swift */; };
+		154A6FE7205A010800583176 /* NetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FE6205A010800583176 /* NetClient.swift */; };
+		154A6FEB205A0D7900583176 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FEA205A0D7900583176 /* LoginVC.swift */; };
+		154A6FF0205A160300583176 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FEF205A160300583176 /* UserApi.swift */; };
+		154A6FF3205A190400583176 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF2205A190400583176 /* LoginViewModel.swift */; };
+		BB87406AD101F01D5DCE5E6A /* Pods_Triponroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5C5A6A47D9D73CDEA100D1 /* Pods_Triponroad.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154A6FC52059111400583176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154A6FA82059111300583176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154A6FAF2059111300583176;
+			remoteInfo = Triponroad;
+		};
+		154A6FD02059111400583176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 154A6FA82059111300583176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154A6FAF2059111300583176;
+			remoteInfo = Triponroad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		154A6FB02059111300583176 /* Triponroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triponroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		154A6FB32059111300583176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		154A6FB52059111300583176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		154A6FB82059111400583176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		154A6FBA2059111400583176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		154A6FBD2059111400583176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		154A6FBF2059111400583176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154A6FC42059111400583176 /* TriponroadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriponroadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		154A6FC82059111400583176 /* TriponroadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriponroadTests.swift; sourceTree = "<group>"; };
+		154A6FCA2059111400583176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154A6FCF2059111400583176 /* TriponroadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriponroadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		154A6FD32059111400583176 /* TriponroadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriponroadUITests.swift; sourceTree = "<group>"; };
+		154A6FD52059111400583176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154A6FE6205A010800583176 /* NetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetClient.swift; sourceTree = "<group>"; };
+		154A6FEA205A0D7900583176 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		154A6FEF205A160300583176 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		154A6FF2205A190400583176 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		21BCEA848F9B63ABAB8C3372 /* Pods-Triponroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triponroad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad.release.xcconfig"; sourceTree = "<group>"; };
+		6E5C5A6A47D9D73CDEA100D1 /* Pods_Triponroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triponroad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A80F5A5AC7C1875ABC0351B /* Pods-Triponroad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triponroad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154A6FAD2059111300583176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB87406AD101F01D5DCE5E6A /* Pods_Triponroad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FC12059111400583176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FCC2059111400583176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154A6FA72059111300583176 = {
+			isa = PBXGroup;
+			children = (
+				154A6FB22059111300583176 /* Triponroad */,
+				154A6FC72059111400583176 /* TriponroadTests */,
+				154A6FD22059111400583176 /* TriponroadUITests */,
+				154A6FB12059111300583176 /* Products */,
+				F62E887BD88949BCF956B1DD /* Pods */,
+				F61EA713C17D1C6D5BA860DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		154A6FB12059111300583176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FB02059111300583176 /* Triponroad.app */,
+				154A6FC42059111400583176 /* TriponroadTests.xctest */,
+				154A6FCF2059111400583176 /* TriponroadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		154A6FB22059111300583176 /* Triponroad */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FE8205A0D4000583176 /* User */,
+				154A6FE5205913FA00583176 /* NetTool */,
+				154A6FB32059111300583176 /* AppDelegate.swift */,
+				154A6FB52059111300583176 /* ViewController.swift */,
+				154A6FB72059111400583176 /* Main.storyboard */,
+				154A6FBA2059111400583176 /* Assets.xcassets */,
+				154A6FBC2059111400583176 /* LaunchScreen.storyboard */,
+				154A6FBF2059111400583176 /* Info.plist */,
+			);
+			path = Triponroad;
+			sourceTree = "<group>";
+		};
+		154A6FC72059111400583176 /* TriponroadTests */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FC82059111400583176 /* TriponroadTests.swift */,
+				154A6FCA2059111400583176 /* Info.plist */,
+			);
+			path = TriponroadTests;
+			sourceTree = "<group>";
+		};
+		154A6FD22059111400583176 /* TriponroadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FD32059111400583176 /* TriponroadUITests.swift */,
+				154A6FD52059111400583176 /* Info.plist */,
+			);
+			path = TriponroadUITests;
+			sourceTree = "<group>";
+		};
+		154A6FE5205913FA00583176 /* NetTool */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FEE205A15E500583176 /* Api */,
+				154A6FE6205A010800583176 /* NetClient.swift */,
+			);
+			path = NetTool;
+			sourceTree = "<group>";
+		};
+		154A6FE8205A0D4000583176 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FF1205A18F200583176 /* ViewModel */,
+				154A6FE9205A0D5000583176 /* Login */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		154A6FE9205A0D5000583176 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FEA205A0D7900583176 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		154A6FEE205A15E500583176 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FEF205A160300583176 /* UserApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		154A6FF1205A18F200583176 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FF2205A190400583176 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F61EA713C17D1C6D5BA860DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E5C5A6A47D9D73CDEA100D1 /* Pods_Triponroad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F62E887BD88949BCF956B1DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A80F5A5AC7C1875ABC0351B /* Pods-Triponroad.debug.xcconfig */,
+				21BCEA848F9B63ABAB8C3372 /* Pods-Triponroad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154A6FAF2059111300583176 /* Triponroad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154A6FD82059111400583176 /* Build configuration list for PBXNativeTarget "Triponroad" */;
+			buildPhases = (
+				42CF77FE72048B97A234C165 /* [CP] Check Pods Manifest.lock */,
+				154A6FAC2059111300583176 /* Sources */,
+				154A6FAD2059111300583176 /* Frameworks */,
+				154A6FAE2059111300583176 /* Resources */,
+				3D686DC7023C19ABDF50B86D /* [CP] Embed Pods Frameworks */,
+				668FE6CE103E58B757DCEE3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Triponroad;
+			productName = Triponroad;
+			productReference = 154A6FB02059111300583176 /* Triponroad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		154A6FC32059111400583176 /* TriponroadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154A6FDB2059111400583176 /* Build configuration list for PBXNativeTarget "TriponroadTests" */;
+			buildPhases = (
+				154A6FC02059111400583176 /* Sources */,
+				154A6FC12059111400583176 /* Frameworks */,
+				154A6FC22059111400583176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154A6FC62059111400583176 /* PBXTargetDependency */,
+			);
+			name = TriponroadTests;
+			productName = TriponroadTests;
+			productReference = 154A6FC42059111400583176 /* TriponroadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		154A6FCE2059111400583176 /* TriponroadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154A6FDE2059111400583176 /* Build configuration list for PBXNativeTarget "TriponroadUITests" */;
+			buildPhases = (
+				154A6FCB2059111400583176 /* Sources */,
+				154A6FCC2059111400583176 /* Frameworks */,
+				154A6FCD2059111400583176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154A6FD12059111400583176 /* PBXTargetDependency */,
+			);
+			name = TriponroadUITests;
+			productName = TriponroadUITests;
+			productReference = 154A6FCF2059111400583176 /* TriponroadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154A6FA82059111300583176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = unicorn;
+				TargetAttributes = {
+					154A6FAF2059111300583176 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					154A6FC32059111400583176 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 154A6FAF2059111300583176;
+					};
+					154A6FCE2059111400583176 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 154A6FAF2059111300583176;
+					};
+				};
+			};
+			buildConfigurationList = 154A6FAB2059111300583176 /* Build configuration list for PBXProject "Triponroad" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 154A6FA72059111300583176;
+			productRefGroup = 154A6FB12059111300583176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154A6FAF2059111300583176 /* Triponroad */,
+				154A6FC32059111400583176 /* TriponroadTests */,
+				154A6FCE2059111400583176 /* TriponroadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154A6FAE2059111300583176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154A6FBE2059111400583176 /* LaunchScreen.storyboard in Resources */,
+				154A6FBB2059111400583176 /* Assets.xcassets in Resources */,
+				154A6FB92059111400583176 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FC22059111400583176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FCD2059111400583176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D686DC7023C19ABDF50B86D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CF77FE72048B97A234C165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Triponroad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		668FE6CE103E58B757DCEE3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154A6FAC2059111300583176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154A6FB62059111300583176 /* ViewController.swift in Sources */,
+				154A6FF0205A160300583176 /* UserApi.swift in Sources */,
+				154A6FF3205A190400583176 /* LoginViewModel.swift in Sources */,
+				154A6FE7205A010800583176 /* NetClient.swift in Sources */,
+				154A6FEB205A0D7900583176 /* LoginVC.swift in Sources */,
+				154A6FB42059111300583176 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FC02059111400583176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154A6FC92059111400583176 /* TriponroadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		154A6FCB2059111400583176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154A6FD42059111400583176 /* TriponroadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154A6FC62059111400583176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154A6FAF2059111300583176 /* Triponroad */;
+			targetProxy = 154A6FC52059111400583176 /* PBXContainerItemProxy */;
+		};
+		154A6FD12059111400583176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154A6FAF2059111300583176 /* Triponroad */;
+			targetProxy = 154A6FD02059111400583176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		154A6FB72059111400583176 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154A6FB82059111400583176 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		154A6FBC2059111400583176 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154A6FBD2059111400583176 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		154A6FD62059111400583176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		154A6FD72059111400583176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154A6FD92059111400583176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A80F5A5AC7C1875ABC0351B /* Pods-Triponroad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3EPGK8YRJ;
+				INFOPLIST_FILE = Triponroad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.Triponroad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		154A6FDA2059111400583176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BCEA848F9B63ABAB8C3372 /* Pods-Triponroad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3EPGK8YRJ;
+				INFOPLIST_FILE = Triponroad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.Triponroad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		154A6FDC2059111400583176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TriponroadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.TriponroadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Triponroad.app/Triponroad";
+			};
+			name = Debug;
+		};
+		154A6FDD2059111400583176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TriponroadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.TriponroadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Triponroad.app/Triponroad";
+			};
+			name = Release;
+		};
+		154A6FDF2059111400583176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TriponroadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.TriponroadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Triponroad;
+			};
+			name = Debug;
+		};
+		154A6FE02059111400583176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TriponroadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzqok.TriponroadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Triponroad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154A6FAB2059111300583176 /* Build configuration list for PBXProject "Triponroad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A6FD62059111400583176 /* Debug */,
+				154A6FD72059111400583176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154A6FD82059111400583176 /* Build configuration list for PBXNativeTarget "Triponroad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A6FD92059111400583176 /* Debug */,
+				154A6FDA2059111400583176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154A6FDB2059111400583176 /* Build configuration list for PBXNativeTarget "TriponroadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A6FDC2059111400583176 /* Debug */,
+				154A6FDD2059111400583176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154A6FDE2059111400583176 /* Build configuration list for PBXNativeTarget "TriponroadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A6FDF2059111400583176 /* Debug */,
+				154A6FE02059111400583176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154A6FA82059111300583176 /* Project object */;
+}
