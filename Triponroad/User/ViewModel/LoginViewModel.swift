@@ -30,7 +30,9 @@ class LoginViewModel: NSObject {
         let mobileAndPassword = Observable.combineLatest(mobile,password){($0,$1)}.share(replay: 1)
         
         signedIn = loginTap.withLatestFrom(mobileAndPassword).flatMap { (x,y) in
-            return NetInstance.request(request: LoginApi.Login(moblie: x, password: y)).map({(x)->Bool in
+            return NetInstance.request(request: UserApi.Login(moblie: x, password: y)).map({(info)->Bool in
+                print(info)
+                let model = UserInfoModel.init(jsonData: info)
                 return true
             }).catchErrorJustReturn(false)
         }

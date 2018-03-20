@@ -8,11 +8,11 @@
 
 import UIKit
 import Alamofire
-enum LoginApi {
+enum UserApi {
     case Login(moblie:String?,password:String?)
 }
 
-extension LoginApi:Request {
+extension UserApi:Request {
     var method: HTTPMethod {
         return HTTPMethod.post
     }

@@ -8,4 +8,5 @@ target 'Triponroad' do
     pod 'Alamofire'
     pod 'SnapKit'
     pod 'SwiftyJSON'
+    pod 'MBProgressHUD'
 end

@@ -32,8 +32,10 @@ class LoginVC: UIViewController {
         im_background.clipsToBounds = true
         im_background.contentMode = .scaleAspectFill
         self.view.addSubview(im_background)
+        tf_userName.text = "lzqok"
         tf_userName.backgroundColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.5)
         self.view.addSubview(tf_userName)
+        tf_password.text = "Lzqok123456"
         tf_password.backgroundColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.5)
         self.view.addSubview(tf_password)
         btn_submit.backgroundColor = UIColor.blue
@@ -76,11 +78,17 @@ class LoginVC: UIViewController {
         viewModel?.signedIn.subscribe(onNext: { (isLogin) in
             if isLogin {
                 print("登录成功")
+                self.mainView()
             }else {
                 print("登录失败")
             }
         }).disposed(by: disposeBag)
         
+    }
+    
+    func mainView() {
+        let vc = TRTabBarVC()
+        TRAppDelegate.window?.rootViewController = vc
     }
 
     override func didReceiveMemoryWarning() {

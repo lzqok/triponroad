@@ -18,7 +18,10 @@ enum RequestError:Swift.Error {
         switch self {
         case .HTTPError:break
         case .MapperError:break
-        case .CustomError( _, _):break
+        case .CustomError(let msg, let code):
+            print("code ---> \(code), msg-->\(msg)")
+            LZQNoticePopup.init(image: msg, msg: msg).show()
+            break
         }
         return self
     }
@@ -27,12 +30,13 @@ enum RequestError:Swift.Error {
 let SUCCESSCODE = 0
 let RESULT_CODE = "code"
 let RESULT_MESSAGE = "msg"
-let RESULT_DATA = "result"
+let RESULT_DATA = "data"
     
 protocol Request {
     var path:String{get}
     var method:HTTPMethod{get}
     var parameters:[String:Any]?{get}
+    var responsModel:String{get}
     var hub:Bool{get}
 }
 
@@ -50,27 +54,28 @@ class NetClient: NSObject {
         return Static.instance
     }
     
-    func request<T:Request>(request:T) -> Observable<[String:Any]> {
-        return Observable<[String:Any]>.create({ (observer) -> Disposable in
+    func request<T:Request>(request:T) -> Observable<JSON> {
+        return Observable<JSON>.create({ (observer) -> Disposable in
             Alamofire.request(BaseURL+request.path, method: request.method, parameters: request.parameters, encoding: JSONEncoding.default).validate().responseJSON { (response) in
                 switch response.result {
                 case .success(_):
                     if let result = response.result.value {
-                        let data = JSON(result)
-                        if let code = data[RESULT_CODE].intValue as? Int {
-                            if code == SUCCESSCODE {
-                                observer.onNext(data[RESULT_DATA].dictionaryValue)
-                                observer.onCompleted()
-                            }else {
-                               let message = data[RESULT_MESSAGE].stringValue
-                               observer.onError(RequestError.CustomError(msg: message, code: code).show())
-                            }
+                        let data = JSON.init(parseJSON: result as! String)
+                        let code = data[RESULT_CODE].intValue
+                        if code == SUCCESSCODE {
+                            observer.onNext(data)
+                            let message = data[RESULT_MESSAGE].stringValue
+                            observer.onError(RequestError.CustomError(msg: message, code: code).show())
+                            observer.onCompleted()
                         }else {
-                            observer.onError(RequestError.MapperError.show())
+                           let message = data[RESULT_MESSAGE].stringValue
+                           observer.onError(RequestError.CustomError(msg: message, code: code).show())
                         }
+                        
                     }else {
                         observer.onError(RequestError.MapperError.show())
                     }
+                    
                 case .failure(_):
                     observer.onError(RequestError.HTTPError.show())
                 }
@@ -83,3 +88,4 @@ class NetClient: NSObject {
         
     }
 }
+

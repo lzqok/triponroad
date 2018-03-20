@@ -18,6 +18,16 @@
 		154A6FEB205A0D7900583176 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FEA205A0D7900583176 /* LoginVC.swift */; };
 		154A6FF0205A160300583176 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FEF205A160300583176 /* UserApi.swift */; };
 		154A6FF3205A190400583176 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF2205A190400583176 /* LoginViewModel.swift */; };
+		154A6FF6205F4E1A00583176 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF5205F4E1900583176 /* BaseModel.swift */; };
+		154A6FF9205F4E7400583176 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FF8205F4E7400583176 /* UserInfoModel.swift */; };
+		154A6FFC205F5F8F00583176 /* LZQNoticePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFB205F5F8F00583176 /* LZQNoticePopup.swift */; };
+		154A6FFF205F7EBE00583176 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A6FFE205F7EBE00583176 /* Extension+String.swift */; };
+		154A7001205F9BC100583176 /* TRFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A7000205F9BC100583176 /* TRFont.swift */; };
+		154A7003205F9C1E00583176 /* TRPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A7002205F9C1E00583176 /* TRPublic.swift */; };
+		154A7005205F9EED00583176 /* TRColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A7004205F9EED00583176 /* TRColor.swift */; };
+		154A7009205FA3DA00583176 /* TRTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A7008205FA3DA00583176 /* TRTabBarVC.swift */; };
+		154A700B205FA3F800583176 /* IndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A700A205FA3F800583176 /* IndexVC.swift */; };
+		154A700F205FA43900583176 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A700E205FA43900583176 /* UserVC.swift */; };
 		BB87406AD101F01D5DCE5E6A /* Pods_Triponroad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5C5A6A47D9D73CDEA100D1 /* Pods_Triponroad.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +66,16 @@
 		154A6FEA205A0D7900583176 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		154A6FEF205A160300583176 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		154A6FF2205A190400583176 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		154A6FF5205F4E1900583176 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		154A6FF8205F4E7400583176 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		154A6FFB205F5F8F00583176 /* LZQNoticePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZQNoticePopup.swift; sourceTree = "<group>"; };
+		154A6FFE205F7EBE00583176 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		154A7000205F9BC100583176 /* TRFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRFont.swift; sourceTree = "<group>"; };
+		154A7002205F9C1E00583176 /* TRPublic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPublic.swift; sourceTree = "<group>"; };
+		154A7004205F9EED00583176 /* TRColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRColor.swift; sourceTree = "<group>"; };
+		154A7008205FA3DA00583176 /* TRTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRTabBarVC.swift; sourceTree = "<group>"; };
+		154A700A205FA3F800583176 /* IndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexVC.swift; sourceTree = "<group>"; };
+		154A700E205FA43900583176 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		21BCEA848F9B63ABAB8C3372 /* Pods-Triponroad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triponroad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad.release.xcconfig"; sourceTree = "<group>"; };
 		6E5C5A6A47D9D73CDEA100D1 /* Pods_Triponroad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triponroad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A80F5A5AC7C1875ABC0351B /* Pods-Triponroad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triponroad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +132,10 @@
 		154A6FB22059111300583176 /* Triponroad */ = {
 			isa = PBXGroup;
 			children = (
+				154A7006205F9FDF00583176 /* Home */,
+				154A6FFD205F7E7700583176 /* Extension */,
+				154A6FFA205F5F2800583176 /* Public */,
+				154A6FF4205F4E0100583176 /* Base */,
 				154A6FE8205A0D4000583176 /* User */,
 				154A6FE5205913FA00583176 /* NetTool */,
 				154A6FB32059111300583176 /* AppDelegate.swift */,
@@ -154,6 +178,8 @@
 		154A6FE8205A0D4000583176 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				154A700D205FA42200583176 /* Controller */,
+				154A6FF7205F4E5B00583176 /* Model */,
 				154A6FF1205A18F200583176 /* ViewModel */,
 				154A6FE9205A0D5000583176 /* Login */,
 			);
@@ -182,6 +208,66 @@
 				154A6FF2205A190400583176 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		154A6FF4205F4E0100583176 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				154A7007205FA3A100583176 /* Controller */,
+				154A6FF5205F4E1900583176 /* BaseModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		154A6FF7205F4E5B00583176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FF8205F4E7400583176 /* UserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		154A6FFA205F5F2800583176 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FFB205F5F8F00583176 /* LZQNoticePopup.swift */,
+				154A7000205F9BC100583176 /* TRFont.swift */,
+				154A7002205F9C1E00583176 /* TRPublic.swift */,
+				154A7004205F9EED00583176 /* TRColor.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		154A6FFD205F7E7700583176 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				154A6FFE205F7EBE00583176 /* Extension+String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		154A7006205F9FDF00583176 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				154A700A205FA3F800583176 /* IndexVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		154A7007205FA3A100583176 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				154A7008205FA3DA00583176 /* TRTabBarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		154A700D205FA42200583176 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				154A700E205FA43900583176 /* UserVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F61EA713C17D1C6D5BA860DC /* Frameworks */ = {
@@ -343,6 +429,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Triponroad/Pods-Triponroad-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -353,6 +440,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -404,12 +492,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154A700B205FA3F800583176 /* IndexVC.swift in Sources */,
+				154A6FFF205F7EBE00583176 /* Extension+String.swift in Sources */,
 				154A6FB62059111300583176 /* ViewController.swift in Sources */,
 				154A6FF0205A160300583176 /* UserApi.swift in Sources */,
+				154A6FF9205F4E7400583176 /* UserInfoModel.swift in Sources */,
+				154A6FF6205F4E1A00583176 /* BaseModel.swift in Sources */,
+				154A7001205F9BC100583176 /* TRFont.swift in Sources */,
+				154A7003205F9C1E00583176 /* TRPublic.swift in Sources */,
 				154A6FF3205A190400583176 /* LoginViewModel.swift in Sources */,
+				154A7009205FA3DA00583176 /* TRTabBarVC.swift in Sources */,
 				154A6FE7205A010800583176 /* NetClient.swift in Sources */,
+				154A6FFC205F5F8F00583176 /* LZQNoticePopup.swift in Sources */,
 				154A6FEB205A0D7900583176 /* LoginVC.swift in Sources */,
+				154A7005205F9EED00583176 /* TRColor.swift in Sources */,
 				154A6FB42059111300583176 /* AppDelegate.swift in Sources */,
+				154A700F205FA43900583176 /* UserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
