@@ -34,9 +34,7 @@ enum HTTPSTATUSCODE:Int {
 }
 
 let SUCCESSCODE = 0
-let RESULT_CODE = "code"
 let RESULT_MESSAGE = "msg"
-let RESULT_DATA = "data"
     
 protocol Request {
     var path:String{get}

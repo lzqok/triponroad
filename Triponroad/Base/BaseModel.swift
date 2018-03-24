@@ -13,8 +13,7 @@ class BaseModel: NSObject {
     var data:JSON?
     var msg : String?
     init(jsonData:JSON){
-        code = jsonData[RESULT_CODE].intValue
         msg = jsonData[RESULT_MESSAGE].stringValue
-        data = jsonData[RESULT_DATA]
+        data = jsonData
     }
 }
