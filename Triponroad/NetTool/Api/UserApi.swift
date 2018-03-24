@@ -13,6 +13,10 @@ enum UserApi {
 }
 
 extension UserApi:Request {
+    var responsModel: String {
+        return ""
+    }
+    
     var method: HTTPMethod {
         return HTTPMethod.post
     }

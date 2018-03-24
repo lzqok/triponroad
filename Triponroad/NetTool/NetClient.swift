@@ -27,6 +27,12 @@ enum RequestError:Swift.Error {
     }
 }
 
+//请求错误状态
+enum HTTPSTATUSCODE:Int {
+    case HTTP_200_SUCCESS = 200 //
+    case HTTP_400_ERROR = 400
+}
+
 let SUCCESSCODE = 0
 let RESULT_CODE = "code"
 let RESULT_MESSAGE = "msg"
@@ -60,12 +66,10 @@ class NetClient: NSObject {
                 switch response.result {
                 case .success(_):
                     if let result = response.result.value {
-                        let data = JSON.init(parseJSON: result as! String)
-                        let code = data[RESULT_CODE].intValue
-                        if code == SUCCESSCODE {
+                        let data = JSON(result)
+                        let code = response.response!.statusCode
+                        if code == HTTPSTATUSCODE.HTTP_200_SUCCESS.rawValue {
                             observer.onNext(data)
-                            let message = data[RESULT_MESSAGE].stringValue
-                            observer.onError(RequestError.CustomError(msg: message, code: code).show())
                             observer.onCompleted()
                         }else {
                            let message = data[RESULT_MESSAGE].stringValue
@@ -77,7 +81,21 @@ class NetClient: NSObject {
                     }
                     
                 case .failure(_):
-                    observer.onError(RequestError.HTTPError.show())
+                    let code = response.response!.statusCode
+                    if code == HTTPSTATUSCODE.HTTP_400_ERROR.rawValue {
+                        if let result = response.data {
+                            let data = JSON(result)
+                            
+                            let message = data[RESULT_MESSAGE].stringValue
+                            observer.onError(RequestError.CustomError(msg: message, code: code).show())
+                        }else{
+                           observer.onError(RequestError.HTTPError.show())
+                        }
+                        
+
+                    }else{
+                       observer.onError(RequestError.HTTPError.show())
+                    }
                 }
             }
             
